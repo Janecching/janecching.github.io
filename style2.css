@@ -1,0 +1,72 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.left {
+    display: block;
+    height: 100%;
+    width: 30%;
+    background-color: whitesmoke;
+    border: none;
+}
+
+.intro {
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 300;
+    padding: 5em 2em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.profile_pic {
+    border-radius: 50%;
+    height: 50%;
+    width: 50%;
+}
+
+.social-icon {
+    color: rgb(136, 134, 134);
+    transition: color 0.2s;
+}
+
+.social-icon:hover {
+    color: black;
+}
+
+
+.right {
+    background-color: white;
+    display: block;
+    width: 70%;
+    height: 100%;
+    overflow-y: scroll;
+    border: none;
+    color: black;
+    font-family: 'Nothing You Could Do', cursive;
+}
+
+.category {
+    margin: 5%;
+}
+
+.project_pic {
+    width: 250px;
+    height: 150px;
+}
+
+.bio {
+    font-size: medium;
+}
+
