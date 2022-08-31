@@ -1,206 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jane Chong</title>
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href=style2.css>
-    </head>
-    <body>
-        <div id="popup1" class="popup">
-            <div class="container1">
-                <div class="left1">
-                    <div class="projectdesc">
-                        <h1 class="title"> <u>Project 1: Model Model</u> </h1>
-                        <h2 class="section__title"> > Why i built it?</h2>
-                        <p class="desc">I built a ML model that helps me to become an IG model</p>
-                        <h2 class="section__title"> > How it works?</h2>
-                        <p class="desc">xxx</p>
-                        <h2 class="section__title"> > What i learned:</h2>
-                        <p class="desc">XCode, Tensorflow</p>
-                        <h2 class="section__title"> > Try it out here:</h2>
-                        <p class="desc">xxx</p>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>Website</title>
+    <link rel="icon" href="images/logo_round.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Jane Chong</a>
+        <!-- <a href="#projects">Projects</a> -->
+        <!-- <a href="#about">About</a> -->
+    </div>
+
+    <section class="about-section">
+        <div class="column">
+            <img src="images/Untitled_Artwork.png" alt="portrait" id="portrait" />
+        </div>
+        <div class="column">
+            <div class="bio">
+                <p> Hi! I'm a computer science student at UPenn (class of Dec 2023), interested in front-end web and iOS development, currently seeking 2023 winter/summer Software Engineering internships
+                    <br><br> Check out my
+                    <a class="social-icon" href="https://www.linkedin.com/in/jane96chong/">
+                        Linkedin<ion-icon name="logo-linkedin"> </ion-icon>
+                    </a>
+                    <a class="social-icon" href="https://github.com/Janecching">
+                        GitHub<ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a class="social-icon" href="https://docs.google.com/document/d/1t5U4Ju-gAhBj9SBNm4Wfsr65CnI22DJd_87rkqajlHE/edit?usp=sharing">
+                        Resume<ion-icon name="document-text-outline"></ion-icon>
+                    </a>
+                    <br> and scroll to see my
+                    <a href="#Projects" style="text-decoration: none"> software projects</a> and <a href="#Experiences" style="text-decoration: none"> experiences</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section" id="Projects">
+        <div class="title">
+            <h2>Recent software projects I've worked on:</h2>
+        </div>
+        <div class="cardsrow">
+            <div class="cards">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/Untitled_Artwork 5.png" alt="pro1" style="width:300px;height:200px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Reaction Trainer iOS Game <br> (Swift, Tensorflow, XCode)</h1>
+                            <p>Utilized pose estimation and front camera motion sensing to create immersive workout game</p>
+                        </div>
                     </div>
                 </div>
-                <div class="right1">
-                    <img class="project_pic" src="box.jpg" alt="" class="portfolio__img">
-                    <img class="project_pic" src="box.jpg" alt="" class="portfolio__img">
-                    <img class="project_pic" src="box.jpg" alt="" class="portfolio__img">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/Untitled_Artwork 4.png" alt="pro2" style="width:300px;height:200px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1> MedDevice Search <br> (HTML/CSS, JavaScript, Figma)</h1>
+                            <p>Implemented API calls for web app that helps users easily understand their devices' FDA clearance process
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/Untitled_Artwork 3.png" alt="pro3" style="width:300px;height:200px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Covid Vaccinations Tracker <br> (Java, Git, GitHub, IntelliJ) </h1>
+                            <p>Designed and built interactive program to display daily covid data for Philadelphia zipcodes</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <span class="popup-btn-close">&times;</span>
-          </div>
-          <div id="popup2" class="popup">
-            <div class="container1">
-                <div class="left1">
-                    <div class="projectdesc">
-                        <h1 class="title"> <u>Project 2: Reaction Training</u> </h1>
-                        <h2 class="section__title"> > Why i built it?</h2>
-                        <p class="desc">I built a ML model that helps me to become an IG model</p>
-                        <h2 class="section__title"> > How it works?</h2>
-                        <p class="desc">xxx</p>
-                        <h2 class="section__title"> > What i learned:</h2>
-                        <p class="desc">XCode, Tensorflow</p>
-                        <h2 class="section__title"> > Try it out here:</h2>
-                        <p class="desc">xxx</p>
-                    </div>
-                </div>
-                <div class="right1">
-                    <img class="project_pic" src="box.jpg" alt="" class="portfolio__img">
-                    <img class="project_pic" src="box.jpg" alt="" class="portfolio__img">
-                    <img class="project_pic" src="box.jpg" alt="" class="portfolio__img">
-                </div>
-            </div>
-            <span class="popup-btn-close">&times;</span>
-          </div>
-          <div id="popup5" class="popup">
-            <div class="container1">
-                <div class="left1">
-                    <div class="projectdesc">
-                        <h1 class="title"> <u>Project 2: Reaction Training</u> </h1>
-                        <h2 class="section__title"> > Why i built it?</h2>
-                        <p class="desc">I built a ML model that helps me to become an IG model</p>
-                        <h2 class="section__title"> > How it works?</h2>
-                        <p class="desc">xxx</p>
-                        <h2 class="section__title"> > What i learned:</h2>
-                        <p class="desc">XCode, Tensorflow</p>
-                        <h2 class="section__title"> > Try it out here:</h2>
-                        <p class="desc">xxx</p>
-                    </div>
-                </div>
-                <div class="right1">
-                    <img class="project_pic" src="box.jpg" alt="" class="portfolio__img">
-                    <img class="project_pic" src="box.jpg" alt="" class="portfolio__img">
-                    <img class="project_pic" src="box.jpg" alt="" class="portfolio__img">
-                </div>
-            </div>
-            <span class="popup-btn-close">&times;</span>
-          </div>
-        
-
-        <div class="container">
-
-            <div class="left">
-                
-                
-                <div class="intro">
-                    <img class="profile_pic" src="drawing.jpg" alt="linkedin_pic">
-                    <h1 class="title">Jane Chong</h1>
-                    <p class="bio">Management consultant <br> turned software engineer <br> based in the  SF Bay Area</p>
-                    <p class="bio">Looking for Summer 2022 <br> SWE Intern opportunities</p>
-                    <a class="social-icon" href="https://www.linkedin.com/in/jane96chong/"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <a class="social-icon" href="https://www.instagram.com/jane96chong/?hl=en"><ion-icon name="logo-instagram"></ion-icon></a>
-                    <a class="social-icon" href="https://www.youtube.com/channel/UCoxEMfaDYtA4XQmbSKCJMMw"><ion-icon name="logo-youtube"></ion-icon></a>
-                    <a class="social-icon" href="https://github.com/Janecching"><ion-icon name="logo-github"></ion-icon></a>
-                    <a class="social-icon" href="#"><ion-icon name="document-text-outline"></ion-icon></a>
-                    <a class="social-icon" href="#"><ion-icon name="mail-outline"></ion-icon></a>
-                </div>
-            </div>
-            
-            
-            <div class="right">
-                <div class ="category">
-                    <h2 class="section__title"> Current projects</h2>
-                    <div class ="slider demo">
-                        <div>
-                            <a class="popup-trigger" data-target="#popup1">
-                                <img class="project_pic" src="pro1.jpg" alt="" class="portfolio__img">
-                            </a>
+        </div>
+        <div class="cardsrow">
+            <div class="cards">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/Untitled_Artwork 2.png" alt="pro1" style="width:300px;height:200px;">
                         </div>
-                        <div>
-                            <a class="popup-trigger" data-target="#popup2">
-                                <img class="project_pic" src="pro2.jpg" alt="" class="portfolio__img">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#" class="portfolio__item">
-                                <img class="project_pic" src="box.jpg" alt="" class="portfolio__img">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#" class="portfolio__item">
-                                <img class="project_pic" src="box.jpg" alt="" class="portfolio__img">
-                            </a>
+                        <div class="flip-card-back">
+                            <h1>Student Management System <br> (Java, Eclipse) </h1>
+                            <p>Applied object oriented programming to implement CRUD functionalities and permissions for user roles
+                            </p>
                         </div>
                     </div>
                 </div>
-                
-                <div class ="category">
-                    <h2 class="section__title"> My story</h2>
-                    <div class ="slider demo">
-                        <div>
-                            <a class="popup-trigger" data-target="#popup5">
-                                <img class="project_pic" src="exp1.jpg" alt="" class="portfolio__img">
-                            </a>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/Untitled_Artwork 1.png" alt="pro2" style="width:300px;height:200px;">
                         </div>
-                        <div>
-                            <a href="#" class="portfolio__item">
-                                <img class="project_pic" src="exp2.jpg" alt="" class="portfolio__img">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#" class="portfolio__item">
-                                <img class="project_pic" src="exp3.jpg" alt="" class="portfolio__img">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#" class="portfolio__item">
-                                <img class="project_pic" src="exp4.jpg" alt="" class="portfolio__img">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#" class="portfolio__item">
-                                <img class="project_pic" src="exp5.jpg" alt="" class="portfolio__img">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#" class="portfolio__item">
-                                <img class="project_pic" src="box.jpg" alt="" class="portfolio__img">
-                            </a>
+                        <div class="flip-card-back">
+                            <h1>Battleship Game <br> (Java, Eclipse)</h1>
+                            <p>Utilized test driven development to create interactive user vs computer version of the classic game
+                            </p>
                         </div>
                     </div>
                 </div>
-                
-
-                <div class ="category">
-                    <h2 class="section__title"> My hobbies</h2>
-                    <div class ="slider demo">
-                        <div>
-                            <a href="#" class="portfolio__item">
-                                <img class="project_pic" src="interests1.jpg" alt="" class="portfolio__img">
-                            </a>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/asm.png" alt="pro3" style="width:300px;height:200px;">
                         </div>
-                        <div>
-                            <a href="#" class="portfolio__item">
-                                <img class="project_pic" src="interests2.jpg" alt="" class="portfolio__img">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#" class="portfolio__item">
-                                <img class="project_pic" src="box.jpg" alt="" class="portfolio__img">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#" class="portfolio__item">
-                                <img class="project_pic" src="box.jpg" alt="" class="portfolio__img">
-                            </a>
+                        <div class="flip-card-back">
+                            <h1>Assembler and Disassembler <br> (C, Assembly)</h1>
+                            <p>Developed C libraries to translate assembly language to binary files and back
+                            </p>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <script src="script.js"></script>
-    </body>
+
+
+        <!-- <img src="images/rocket.png" alt="rocket1" id="rocket1" />
+        <img src="images/ship.png" alt="ship1" id="ship1" />
+        <img src="images/rocket.png" alt="rocket2" id="rocket2" />
+        <img src="images/ship.png" alt="ship2" id="ship2" /> -->
+
+    </section>
+
+    <section class="contact-section" id="Experiences">
+        <div class="title">
+            <h2>My experiences:</h2>
+        </div>
+        <div class="column2">
+            <button type="button" class="collapsible">
+                CodePath iOS Bootcamp
+                </button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <button type="button" class="collapsible">Penn Engineering Teaching Assistant 09/2023-Current</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <button type="button" class="collapsible">UPenn Masters in Computer and Information Technology 09/2023-Current</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <button type="button" class="collapsible">Deloitte Consulting 01/2019-04/2021</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <button type="button" class="collapsible">UQ Bachelors of Economics 07/2015-12/2018</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <button type="button" class="collapsible">Berkeley Research Group 06/2018-09/2018</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+        </div>
+
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"></script>
+</body>
+
 </html>
