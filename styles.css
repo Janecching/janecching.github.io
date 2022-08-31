@@ -138,11 +138,24 @@ ul {
     margin: 20px;
 }
 
-.contact-section {
+.experience-section {
     overflow-x: hidden;
     position: relative;
     /* background-color: whitesmoke; */
     background-image: linear-gradient( #d4f0f7, #d0d5f7);
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-section {
+    overflow-x: hidden;
+    position: relative;
+    /* background-color: whitesmoke; */
+    background-image: linear-gradient( #d0d5f7, #b8cfec);
     height: 94vh;
     display: flex;
     justify-content: center;
@@ -293,4 +306,12 @@ ul {
     display: none;
     overflow: hidden;
     text-align: middle;
+}
+
+.column3 {
+    width: 70%;
+    /* background-image: url("images/box.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 15px; */
 }
