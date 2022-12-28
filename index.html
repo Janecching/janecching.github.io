@@ -6,114 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jane Chong</title>
     <link rel="icon" href="images/logo_round.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <section class="about-section">
-        <div class="column">
-            <img src="images/Untitled_Artwork.png" alt="portrait" id="portrait" />
+    <section class="section" id="about">
+        <div class="about-col">
+            <img src="images/portrait.png" alt="portrait" id="portrait" />
         </div>
-        <div class="column">
+        <div class="about-col">
             <div class="bio">
-                <p> Hi! I'm <span style="font-size: 25px; font-weight: bold">
-                    Jane Chong</span>, a computer science student at UPenn (expected graduation date: Dec 2023), and ex-management consultant. I am currently seeking 2023 winter and summer software engineering or product management internships.
-                    <br><br> Check out my
+                <h1>Hi, I'm Jane Chong
                     <a class="social-icon" href="https://www.linkedin.com/in/jane96chong/">
-                        Linkedin<ion-icon name="logo-linkedin"></ion-icon></a>,
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
                     <a class="social-icon" href="https://github.com/Janecching">
-                        GitHub<ion-icon name="logo-github"></ion-icon></a>,
-                    <a class="social-icon" href="https://docs.google.com/document/d/1t5U4Ju-gAhBj9SBNm4Wfsr65CnI22DJd_87rkqajlHE/edit?usp=sharing">
-                        Resume<ion-icon name="document-text-outline"></ion-icon>
-                    </a> <br> and scroll to see my
-                    <a class="social-icon" href="#Projects"> projects</a> ,
-                    <a class="social-icon" href="#Experiences"> experiences</a> and
-                    <a class="social-icon" href="#Contact"> story</a>.
-
-
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a class="social-icon" href="https://www.canva.com/design/DAFV-enQfpw/OJJ4LMHmijl2JXjIWYybHw/view?utm_content=DAFV-enQfpw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" style="text-decoration:none;">
+                        <ion-icon name="document-text-outline"></ion-icon>
+                    </a>
+                    <a class="social-icon" href="mailto:janchong@seas.upenn.edu" style="text-decoration:none;">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                </h1>
+                <li>Current CS master student at UPenn (Exp. Dec 2023)</li>
+                <li>Experienced in Web Development, Site Reliability Eng</li>
+                <li>Proficient in Python, Java, C, Javascript</li>
+                <li>Seeking Summer 2023 SWE Internship, 2024 Grad Role</li>
+                <p>
+                    Check out my
+                    <a href="#projects" style="color:black"> projects</a>,
+                    <a href="#experiences" style="color:black"> experiences</a> and
+                    <a href="#skills" style="color:black"> skills</a> below
+                </p>
             </div>
     </section>
 
-    <section class="projects-section" id="Projects">
-        <div class="title">
-            <h2>My projects:</h2>
-        </div>
-        <div class="cardsrow">
-            <div class="cards">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="images/Untitled_Artwork 5.png" alt="pro1" style="width:300px;height:200px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h1>Reaction Trainer iOS Game <br> (Swift, Tensorflow, XCode)</h1>
-                            <p>Utilized pose estimation and front camera motion sensing to create immersive workout game</p>
-                        </div>
+    <section class="section" id="projects">
+        <h1>Highlighted projects:</h1>
+        <div class="projects-container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/Untitled_Artwork 5.png" class="project-img">
                     </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="images/Untitled_Artwork 4.png" alt="pro2" style="width:300px;height:200px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h1> MedDevice Search <br> (HTML/CSS, JavaScript, Figma)</h1>
-                            <p>Implemented API calls for web app that helps users easily understand their devices' FDA clearance process
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="images/Untitled_Artwork 3.png" alt="pro3" style="width:300px;height:200px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h1>Covid Vaccinations Tracker <br> (Java, Git, GitHub, IntelliJ) </h1>
-                            <p>Designed and built interactive program to display daily covid data for Philadelphia zipcodes</p>
-                        </div>
+                    <div class="flip-card-back">
+                        <p>Reaction Trainer iOS Game <br> (Swift, Tensorflow, XCode)</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="cardsrow">
-            <div class="cards">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="images/Untitled_Artwork 2.png" alt="pro1" style="width:300px;height:200px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h1>Student Management System <br> (Java, Eclipse) </h1>
-                            <p>Applied object oriented programming to implement CRUD functionalities and permissions for user roles
-                            </p>
-                        </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/Untitled_Artwork 4.png" class="project-img">
+                    </div>
+                    <div class="flip-card-back">
+                        <p> MedDevice Search <br> (HTML/CSS, JavaScript, Figma)</p>
+                        <!-- <p>Implemented API calls for web app that helps users easily understand their devices' FDA clearance process -->
+                        </p>
                     </div>
                 </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="images/Untitled_Artwork 1.png" alt="pro2" style="width:300px;height:200px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h1>Battleship Game <br> (Java, Eclipse)</h1>
-                            <p>Utilized test driven development to create interactive user vs computer version of the classic game
-                            </p>
-                        </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/Untitled_Artwork 3.png" class="project-img">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Covid Vaccinations Tracker <br> (Java, Git, GitHub, IntelliJ) </p>
+                        <!-- <p>Designed and built interactive program to display daily covid data for Philadelphia zipcodes</p> -->
                     </div>
                 </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="images/asm.png" alt="pro3" style="width:300px;height:200px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h1>Assembler and Disassembler <br> (C, Assembly)</h1>
-                            <p>Developed C libraries to translate assembly language to binary files and back
-                            </p>
-                        </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/Untitled_Artwork 2.png" class="project-img">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Student Management System <br> (Java, Eclipse) </p>
+                        <!-- <p>Applied object oriented programming to implement CRUD functionalities and permissions for user roles -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/Untitled_Artwork 1.png" class="project-img">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Battleship Game <br> (Java, Eclipse)</p>
+                        <!-- <p>Utilized test driven development to create interactive user vs computer version of the classic game -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/asm.png" class="project-img">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Assembler and Disassembler <br> (C, Assembly)</p>
+                        <!-- <p>Developed C libraries to translate assembly language to binary files and back </p> -->
                     </div>
                 </div>
             </div>
@@ -122,64 +119,75 @@
 
     </section>
 
-    <section class="experience-section" id="Experiences">
+    <section class="section" id="experiences">
         <div class="title">
-            <h2>My experiences:</h2>
+            <h1>Highlighted experiences:</h1>
         </div>
-        <div class="column2">
-            <button type="button" class="collapsible">Code Path University iOS Bootcamp (Sep2022 - Current)</button>
+        <div class="experience-container">
+            <button type="button" class="collapse" id="work"><p>Site Reliability Engineering Fellow @ MLH (Fall 2022)</p></button>
             <div class="content">
-                <p>Semester long project-based exploration into iOS mobile app development focusing on the design and implementation of RESTful API clients</p>
+                <p>xxx</p>
             </div>
-            <button type="button" class="collapsible">Penn Engineering Teaching Assistant (Sep2022 - Current)</button>
+            <button type="button" class="collapse" id="work"><p>Discrete Math Teaching Assistant @ UPenn (Fall 2022)</p></button>
             <div class="content">
-                <p>Teaching recitations and holding office hours for graduate discrete mathematics course
-                </p>
+                <p>xxx</p>
             </div>
-            <button type="button" class="collapsible">UPenn Masters in Computer Science (Jan2022 - Current)</button>
+            <button type="button" class="collapse" id="edu"><p>Master of Computer Science @ UPenn (2022-2023)</p></button>
             <div class="content">
-                <p>Completed courses in Software Development, Computer Systems, Data structures, Algorithms, Database and Information Systems</p>
+                <p>xxx</p>
             </div>
-            <button type="button" class="collapsible">Deloitte Strategy & Operations Consultant (Jan2019 - Apr2021)</button>
+            <button type="button" class="collapse" id="work"><p>Strategy & Operations Consultant @ Deloitte (2019-2021)</p></button>
             <div class="content">
-                <p> Project 1: Devised business requirements and product specifications for a margin reporting software for an oil and gas client; worked closely with data engineers and UX designers to drive successful delivery of MVP
-                    <br> <br> Project 2: Designed consumer survey and translated 150 survey responses into customer personas and journey maps; built business cases for digital investments prioritization discussions for a consumer goods client
-                    <br> <br> Project 3: Collaborated with sales, solution engineers, and service delivery team to develop a new service offering as part of a system integrator client’s transformation towards recurring revenue business model
-                    <br> <br> Project 4: Sourced and presented venture opportunities to the senior management of an automotive conglomerate; completed acquisition including technical due diligence and integration of a telematics startup
-                    <br> <br> Project 5: Performed market research and recommended entry strategy for an electronics corporation client's facial recognition product resulting in sales demonstrations with 2 government bodies
-                </p>
+                <p>xxx</p>
             </div>
-            <button type="button" class="collapsible">UQ Bachelors in Quantitative Economics (Jul2015 - Dec2018)</button>
+
+            <button type="button" class="collapse" id="edu"><p>Bachelor of Quantitative Economics @ UQueensland (2015-2018)</p></button>
             <div class="content">
-                <p> Completed courses in Advanced Econometrics, Financial Management, Corporate Finance, Financial Modeling, Accounting for Decision Making. Awarded full tuition scholarship (1 per cohort), Golden Jubilee Award (1 per school), table tennis
-                    team captain
-                </p>
+                <p>xxx</p>
             </div>
-            <button type="button" class="collapsible">Berkeley Research Group Summer Intern (Jun2018 - Sep2018)</button>
+            <!-- <button type="button" class="collapsible">Berkeley Research Group Summer Intern (Jun2018 - Sep2018)</button>
             <div class="content">
                 <p>Wrote SQL queries to obtain financial data and created valuation models to support expert witness reports</p>
-            </div>
+            </div> -->
         </div>
 
     </section>
 
-    <section class="contact-section" id="Contact">
-        <div class="title">
-            <h2>My story:</h2>
-        </div>
-        <div class="column3">
-            <p> Like many econ grads, I joined consulting after college and got to work with exciting clients in a few different industries and countries while sharpening my
-                <span style="font-size: 25px; font-weight: bold">business, communication and analytical skills.</span>
-                <br> <br> When I relocated to US last year, I had the opportunity to re-evaluate "what do I really want to do with my life?", and decided that I want to
-                <span style="font-size: 25px; font-weight: bold">ship quality products that positively impact many lives.</span>
-                <br> <br> I am grateful to UPenn for giving me a chance to study CS at the graduate level, and I am constantly working on personal projects, hackathons, external courses to expand my technical skills which currently includes: <br>
-                <span style="font-size: 25px; font-weight: bold">Python, Java, C, HTML, CSS, JavaScript, SQL, Swift.</span>
-                <br> <br> I am actively seeking 2023 Winter and Summer Software Engineering or Product Management Internships. Please feel free to reach out via
-                <a class="social-icon" href="https://www.linkedin.com/in/jane96chong/">Linkedin</a> or
-                <a class="social-icon" href="mailto: janchong@seas.upenn.edu">email</a> if you are looking for an
-                <span style="font-size: 25px; font-weight: bold">intern who can write good code that drives business impact!</span>
-
-            </p>
+    <section class="section" id="skills">
+        <h1>Skill summary:</h1>
+        <div class="skill-container">
+            <div class="skill-card">
+                <p>Programming</p>
+                <p>Python</p>
+                <p>Java</p>
+                <p>C</p>
+                <p>JavaScript</p>
+                <p>HTML,CSS</p>
+            </div>
+            <div class="skill-card">
+                <p>Frameworks</p>
+                <p>Flask</p>
+                <p>Django</p>
+                <p>Node</p>
+                <p>Express</p>
+                <p>React</p>
+            </div>
+            <div class="skill-card">
+                <p>SRE-Devops</p>
+                <p>Linux</p>
+                <p>Docker</p>
+                <p>CI-CD</p>
+                <p>Grafana</p>
+                <p>Kubernetes</p>
+            </div>
+            <div class="skill-card">
+                <p>Databases</p>
+                <p>MySQL</p>
+                <p>MongoDB</p>
+                <p>AWS RDS</p>
+                <p>Neo4j</p>
+                <p>Google Cloud</p>
+            </div>
         </div>
     </section>
 

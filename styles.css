@@ -1,138 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet');
 body {
     margin: 0;
     padding: 0;
 }
 
+
+/* fonts */
+
 h1 {
     font-family: 'Nothing You Could Do', cursive;
-    font-size: 15px;
-    text-decoration: underline;
-    /* font-weight: bold; */
+    font-size: 30px;
 }
 
 h2 {
     font-family: 'Nothing You Could Do', cursive;
-    font-size: 25px;
+    font-size: 20px;
 }
 
-.about-section {
-    overflow: hidden;
-    /* background-color: white; */
+li,
+p {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 17px;
+}
+
+.section {
+    overflow-x: hidden;
+    position: relative;
     height: 100vh;
-    /* height: calc(100vh - 54.5px); */
-    background-image: linear-gradient(#b8cfec, #f8e8ed);
     display: flex;
-    width: 100%;
     justify-content: center;
     flex-flow: row nowrap;
     align-items: center;
 }
 
-.bio {
-    align-items: left;
+
+/* about section */
+
+#about {
+    background-image: linear-gradient(#b8cfec, #f8e8ed);
 }
 
-.column {
-    width: 40%;
-    padding: 10px;
-}
-
-.about-section:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-@media screen and (max-width:768px) {
-    .about-section {
-        flex-flow: column nowrap;
-    }
-    .cards {
-        flex-flow: column nowrap;
-    }
+.about-col {
+    width: 50%;
 }
 
 #portrait {
-    display: block;
     margin: auto;
-    /* text-align: center; */
-    /* display: flex;
-    justify-content: center; */
+    display: block;
     width: 50%;
-    /* place-items: center;
-    margin-left: auto;
-    margin-right: auto; */
-}
-
-p,
-ul {
-    font-size: 17px;
-    font-family: 'Nothing You Could Do', cursive;
 }
 
 .social-icon {
     color: black;
     font-size: 25px;
     transition: color 0.2s;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .social-icon:hover {
     color: rgb(136, 134, 134);
 }
 
-.projects-section {
-    overflow-x: hidden;
-    position: relative;
+@media screen and (max-width:768px) {
+    #about {
+        flex-flow: column nowrap;
+        text-align: center;
+    }
+    .about-col {
+        width: 70%;
+    }
+    li,
+    p {
+        font-size: 15px;
+    }
+}
+
+
+/* project section */
+
+#projects {
     background-image: linear-gradient( #f8e8ed, #d4f0f7);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-flow: row nowrap;
-    align-items: center;
     flex-direction: column;
 }
 
-.cards {
+.projects-container {
     display: flex;
-}
-
-.flip-card {
-    margin: 20px;
-}
-
-.experience-section {
-    overflow-x: hidden;
-    position: relative;
-    /* background-color: whitesmoke; */
-    background-image: linear-gradient( #d4f0f7, #d0d5f7);
-    height: 94vh;
-    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-    flex-flow: row nowrap;
-    align-items: center;
-    flex-direction: column;
-}
-
-.contact-section {
-    overflow-x: hidden;
-    position: relative;
-    /* background-color: whitesmoke; */
-    background-image: linear-gradient( #d0d5f7, #b8cfec);
-    height: 94vh;
-    display: flex;
-    justify-content: center;
-    flex-flow: row nowrap;
-    align-items: center;
-    flex-direction: column;
 }
 
 .flip-card {
     background-color: transparent;
     width: 300px;
     height: 200px;
-    perspective: 1000px;
+    /* perspective: 1000px; */
+    margin: 20px;
 }
 
 .flip-card-inner {
@@ -157,24 +120,47 @@ ul {
     backface-visibility: hidden;
 }
 
-.flip-card-front {
-    color: black;
+.project-img {
+    width: 300px;
+    height: 200px;
 }
 
 .flip-card-back {
-    color: black;
     transform: rotateY(180deg);
     background-image: url("images/box.png");
     background-size: 300px;
     background-repeat: no-repeat;
 }
 
-.column2 {
+@media screen and (max-width:768px) {
+    .flip-card {
+        background-color: transparent;
+        width: 150px;
+        height: 100px;
+        margin: 0px;
+    }
+    .project-img {
+        width: 150px;
+        height: 100px;
+    }
+    .flip-card-back {
+        background-size: 150px;
+    }
+}
+
+
+/* experience section */
+
+#experiences {
+    background-image: linear-gradient( #d4f0f7, #d0d5f7);
+    flex-direction: column;
+}
+
+.experience-container {
     width: 70%;
 }
 
-.collapsible {
-    background-image: url("images/long-box.png");
+.collapse {
     background-size: 100%;
     height: 70px;
     background-repeat: no-repeat;
@@ -191,6 +177,14 @@ ul {
     font-size: 20px;
 }
 
+#work {
+    background-image: url("images/work-box.png");
+}
+
+#edu {
+    background-image: url("images/edu-box.png");
+}
+
 .content {
     padding: 15px;
     display: none;
@@ -198,6 +192,48 @@ ul {
     text-align: middle;
 }
 
-.column3 {
-    width: 70%;
+@media screen and (max-width:768px) {
+    #work,
+    #edu {
+        background-image: none;
+        border-style: solid;
+    }
+}
+
+
+/* skills section */
+
+#skills {
+    background-image: linear-gradient( #d0d5f7, #b8cfec);
+    flex-direction: column;
+}
+
+.skill-container {
+    display: flex;
+}
+
+.skill-card {
+    margin: 10px;
+    width: 120px;
+    background-image: url("images/skill-box.png");
+    background-size: 100%;
+    text-align: center;
+    height: 105%;
+}
+
+@media screen and (max-width:768px) {
+    #skills {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .skill-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .skill-card {
+        background-image: url("images/skill-box.png");
+        height: 265px;
+    }
 }
