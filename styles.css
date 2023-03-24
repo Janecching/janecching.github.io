@@ -9,7 +9,7 @@ body {
 
 h1 {
     font-family: 'Nothing You Could Do', cursive;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 h2 {
@@ -23,6 +23,11 @@ p {
     font-size: 17px;
 }
 
+button {
+    display: grid;
+    align-items: center;
+}
+
 .section {
     overflow-x: hidden;
     position: relative;
@@ -31,6 +36,7 @@ p {
     justify-content: center;
     flex-flow: row nowrap;
     align-items: center;
+    padding: 20px;
 }
 
 
@@ -116,6 +122,8 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
+    background-image: url("images/box.png");
+    background-size: 300px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -130,9 +138,15 @@ p {
     background-image: url("images/box.png");
     background-size: 300px;
     background-repeat: no-repeat;
+    /* margin: 10px; */
 }
 
 @media screen and (max-width:768px) {
+    .flip-card-front {
+        /* display: none; */
+        background-size: 150px;
+        transform: none;
+    }
     .flip-card {
         background-color: transparent;
         width: 150px;
@@ -144,7 +158,9 @@ p {
         height: 100px;
     }
     .flip-card-back {
-        background-size: 150px;
+        display: none;
+        /* background-size: 150px; */
+        transform: none;
     }
 }
 
@@ -158,10 +174,13 @@ p {
 
 .experience-container {
     width: 70%;
+    /* display: grid;
+    align-items: middle; */
 }
 
 .collapse {
-    background-size: 100%;
+    background-size: 90%;
+    /* align-items: center; */
     height: 70px;
     background-repeat: no-repeat;
     background-color: transparent;
