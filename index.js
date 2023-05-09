@@ -12,3 +12,14 @@ for (i = 0; i < coll.length; i++) {
         }
     });
 }
+
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header');
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 40) {
+        header.classList.add('transparent');
+    } else {
+        header.classList.remove('transparent');
+    }
+});
